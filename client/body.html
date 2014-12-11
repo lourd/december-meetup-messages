@@ -1,0 +1,15 @@
+<body>
+  <h1>Boston Meteor Meetup Messages</h1>
+  <input type="text"
+         placeholder="Enter name here"
+         id="nameInput">
+  <input type="text"
+         placeholder="Enter message"
+         id="messageInput">
+  <button>Submit</button>
+  {{#each messages }}
+    <h4>{{ name }}</h4>
+    <p>{{ message }}</p>
+  {{/each}}
+
+</body>
